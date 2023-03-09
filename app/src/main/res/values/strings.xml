@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Univ TPS</string>
+    <string name="se_connecter">Se Connecter</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="send">Send</string>
+    <string name="code">Code</string>
+    <string name="open_url">Open URL</string>
+    <string name="out">Out</string>
+    <string name="url">URL</string>
+</resources>
