@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.practice.algerianpositivevibes">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -41,7 +43,10 @@
             android:name=".broadcasts.MyBroadcastReceiver"
             android:exported="false">
             <intent-filter>
-                <action android:name="APP_SPECIFIC_BROADCAST" />
+
+                <action android:name="LIST_NUM" />
+                <action android:name="SOS" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
             </intent-filter>
         </receiver>
     </application>

@@ -1,13 +1,13 @@
 package com.practice.algerianpositivevibes
 
 import android.content.BroadcastReceiver
-import android.content.Context
+import android.content.Intent
 import android.content.IntentFilter
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
 import com.practice.algerianpositivevibes.broadcasts.MyBroadcastReceiver
+
 
 class Tp3Activity : AppCompatActivity() {
     private lateinit var br: BroadcastReceiver
@@ -17,13 +17,26 @@ class Tp3Activity : AppCompatActivity() {
         setContentView(R.layout.activity_tp3)
 
         br = MyBroadcastReceiver()
-        val filter = IntentFilter("APP_SPECIFIC_BROADCAST")
 
-        val btn  : Button = findViewById(R.id.btn)
-        btn.setOnClickListener {
-            this.registerReceiver(br , filter)
+
+        this.registerReceiver(br , IntentFilter("SOS"))
+        this.registerReceiver(br , IntentFilter("LIST_NUM"))
+        this.registerReceiver(br , IntentFilter(Intent.ACTION_AIRPLANE_MODE_CHANGED))
+
+
+        val btnSos  : Button = findViewById(R.id.sos)
+
+        val listNum  : Button = findViewById(R.id.listNum)
+
+
+        btnSos.setOnClickListener {
+            val intent = Intent("SOS")
+            sendBroadcast(intent)
         }
-
+        listNum.setOnClickListener {
+            val intent = Intent("LIST_NUM")
+            sendBroadcast(intent)
+        }
 
     }
 
