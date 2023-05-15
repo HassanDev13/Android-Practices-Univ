@@ -27,7 +27,7 @@ public class GestionBDD {
 
         ligne.put(BDDHelper.NomTask, nom.toString());
         ligne.put(BDDHelper.PrioTask, prio);
-        ligne.put(BDDHelper.DeadTask, formatDate(date));
+        ligne.put(BDDHelper.DeadTask, String.valueOf(date));
         ligne.put(BDDHelper.EtatAvancementTask, etat);
         long id = bdd.insert(BDDHelper.NOM_TABLE, null, ligne);
         Log.i("*****", "L'id de la tâche insérée est = " + Integer.toString((int) id));
@@ -53,7 +53,7 @@ public class GestionBDD {
         SQLiteDatabase bdd = instHelper.getReadableDatabase();
         String[] colonnes = {
                 BDDHelper.ID,
-                BDDHelper.NOM_BDD,
+                BDDHelper.NomTask,
                 BDDHelper.PrioTask,
                 BDDHelper.DeadTask,
                 BDDHelper.EtatAvancementTask

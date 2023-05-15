@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="406dp"
+        android:layout_width="match_parent"
         android:layout_height="220dp"
         android:layout_marginTop="1dp"
         android:layout_marginBottom="1dp"
@@ -81,7 +81,7 @@
                 android:background="#E9BEF1"
                 android:ems="10"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:textColor="@color/black"
                 android:textSize="17sp"
                 android:textStyle="bold"
@@ -113,7 +113,7 @@
         <Button
             android:id="@+id/button2"
             android:layout_width="296dp"
-            android:layout_height="81dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="#E3ED7B"
             android:text="@string/bout_add_task"
@@ -126,7 +126,7 @@
         <Button
             android:id="@+id/button4"
             android:layout_width="296dp"
-            android:layout_height="81dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="#E3ED7B"
             android:text="@string/bout_view_task"
@@ -139,7 +139,7 @@
         <Button
             android:id="@+id/button3"
             android:layout_width="296dp"
-            android:layout_height="81dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="#E3ED7B"
             android:text="@string/bout_delete_task"
@@ -155,8 +155,8 @@
             android:orientation="vertical"></LinearLayout>
         <ListView
             android:id="@+id/listView"
-            android:layout_width="367dp"
-            android:layout_height="141dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:background="#CEF3F0"
             android:textColor="#009688"
