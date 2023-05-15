@@ -7,6 +7,17 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/tp4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Start TP4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tp1" />
+
+    <Button
         android:id="@+id/tp3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +26,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
         android:id="@+id/tp2"
@@ -39,16 +51,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tp2" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <Button
+        android:id="@+id/tp6"
         android:layout_width="match_parent"
-
-        android:layout_height="200dp"
-        android:scaleType="fitCenter"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Start TP6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/universite" />
+        app:layout_constraintTop_toBottomOf="@+id/tp4" />
+
+    <Button
+        android:id="@+id/tp7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Start TP6.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tp6" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

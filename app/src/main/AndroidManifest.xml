@@ -3,7 +3,9 @@
     package="com.practice.algerianpositivevibes">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
-
+    <queries>
+        <package android:name="com.example.nomdelapplicationinitiale"/>
+    </queries>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,6 +13,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AlgerianPositiveVibes">
+
+        <activity
+            android:name=".Tp6Part2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Tp6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".test_zerrouk.Activity1"
+            android:exported="true" />
+        <activity
+            android:name=".test_zerrouk.Activity3"
+            android:exported="false" />
+        <activity
+            android:name=".test_zerrouk.Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".test_zerrouk.Activity4"
+            android:exported="true" />
+        <activity
+            android:name=".Tp5Activity"
+            android:exported="false" />
         <activity
             android:name=".Tp3Activity"
             android:exported="false" />
@@ -43,7 +67,6 @@
             android:name=".broadcasts.MyBroadcastReceiver"
             android:exported="false">
             <intent-filter>
-
                 <action android:name="LIST_NUM" />
                 <action android:name="SOS" />
                 <action android:name="android.intent.action.AIRPLANE_MODE" />
